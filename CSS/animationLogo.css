@@ -1,10 +1,10 @@
 /* The animation code */
 @keyframes twitterlogo {
     0% {background-color:white;}
-    25% {background-color: turquoise;}
-    50% {background-color: teal;}
-    75% {background-color: darkcyan;}
-    100% { background-color: darkblue;}
+    50% {background-color: teal;
+    translate: rotate(180deg);}
+    100% { background-color: dodgerblue;
+    transform: rotate(360deg);}
 }
 
 /* The element to apply the keyframe to */
@@ -13,8 +13,10 @@
     height: 100px;
     background-color: white;
     animation-name: twitterlogo;
-    animation-duration: 8s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: unset;
 }
 .twitterlogo img{
     width: 100%;
